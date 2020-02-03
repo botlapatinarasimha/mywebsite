@@ -1,0 +1,189 @@
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.outline {
+    width: 100%;
+    height: auto;
+    background-color: #de3e2f;
+    font-family: tahoma;
+    padding: 100px;
+    color: #ffffff;
+
+    .container {
+        position: relative;
+        max-width: 600px;
+        height: auto;
+        border: 2px solid #ffffff;
+        margin: auto;
+        padding: 30px;
+        box-sizing: border-box;
+
+        &:after {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            //  border-top: 2px solid #ffffff;   
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            //  border-left: 2px solid #ffffff; 
+            top: 100%;
+            left: 50%;
+            margin-left: -25px;
+            content: "";
+            transform: rotate(45deg);
+            margin-top: -24px;
+            background-color: #de3e2f;
+        }
+    }
+}
+
+.new-anim {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+
+    .square {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: all 500ms ease;
+            animation: animate 4s linear infinite;
+
+        }
+
+        &:hover span:nth-child(2) {
+            border: none;
+            background-color: green;
+        }
+
+        span:nth-child(3) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: all 500ms ease;
+            animation: animate 6s linear infinite;
+
+
+        }
+
+        &:hover span:nth-child(3) {
+            border: none;
+            background-color: #ffffff;
+        }
+
+        span:nth-child(4) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: all 500ms ease;
+            animation: animate 10s linear infinite;
+
+
+        }
+
+        &:hover span:nth-child(4) {
+            border: none;
+            background-color: orangered;
+        }
+
+        span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: all 500ms ease;
+            animation: animate 2s linear infinite;
+
+
+        }
+
+        &:hover span:nth-child(1) {
+            border: none;
+            background-color: blue;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .content {
+            position: relative;
+            padding: 40px 60px;
+            color: #fff;
+            text-align: center;
+            transition: all 500ms ease;
+            z-index: 9;
+
+            a {
+                position: relative;
+                display: inline-block;
+                margin-top: 10px;
+                border: 2px solid #fff;
+                padding: 6px 18px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #333;
+
+                }
+            }
+
+        }
+    }
+}

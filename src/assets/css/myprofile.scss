@@ -1,0 +1,157 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    padding: 10px 16px;
+    background: rgba(55, 56, 54, 0.774);
+    color: #f1f1f1;
+    position: fixed;
+
+    .navbar-brand {
+        float: left;
+        height: 50px;
+        font-size: 18px;
+        line-height: 20px;
+
+        .brand-img {
+            width: 65px;
+            height: 50px;
+        }
+    }
+
+    .navbar-anchors {
+        width: 100%;
+        height: auto;
+        list-style: none;
+        display: inline-flex;
+
+        .navbar-group {
+            width: 110px;
+            height: 20px;
+            font-size: px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 10px;
+
+            &:hover {
+                border-top: 3px solid rgb(255, 0, 0);
+            }
+
+            .navbar-content {
+                color: #f1f1f1;
+
+                &:hover {
+                    color: #f1f1f1;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+// social icons
+.icons {
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+
+    a {
+        text-decoration: non;
+        padding: 10px;
+        font-size: 20px;
+        font-family: 'oswald', sans-serif;
+        margin: 2px;
+        text-align: right;
+        border-radius: 0px 50px 50px 0px;
+        transform: translate(-130px, 0px);
+        transition: all 0.4s;
+
+        &:hover {
+            transform: translate(-10px, 0px);
+        }
+
+        .facebook {
+            background-color: #2C80D3;
+            color: #ffffff;
+
+            &:hover {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            i {
+                margin-left: 25px;
+                background-color: #ffffff;
+                height: 40px;
+                width: 40px;
+                color: #000000;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                transition: all 600ms ease;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+
+                .icon-social-fb {
+                    color: #2C80D3;
+                }
+            }
+        }
+        .youtube{
+            background-color: #fa0910;
+            color: #ffffff;
+            &:hover {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            i {
+                margin-left: 25px;
+                background-color: #ffffff;
+                height: 40px;
+                width: 40px;
+                color: #000000;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                transition: all 600ms ease;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+                .icon-social-utube{
+                    color: #fa0910;
+
+                }
+            }
+            
+        }
+
+
+        
+
+        .icon-social-tw {
+            color: #53c5ff;
+        }
+    }
+
+
+}

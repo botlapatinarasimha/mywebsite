@@ -1,0 +1,62 @@
+// ==============================================
+// text colors
+
+$txtColors: (
+    headerTxtColor: green,
+    lightGreen: yellow, 
+);
+@function textColors($color-name){
+    @return map-get($txtColors, $color-name);
+}
+
+
+
+// ==============================================
+// background colors
+$bgColors: (
+    bgHeader: orange,
+    bgHome: orangered,
+);
+@function backgroundColors($bgcolor-name){
+    @return map-get($bgColors, $bgcolor-name);
+}
+
+
+// example to use in style.scss
+    // h1{
+    //     background-color: tColors(lightGreen);
+    // }
+    // div{
+    //     background-color: backgroundColors(bgHome);
+    // }
+
+
+
+
+// ==============================================
+// Padings (Creating our own paddings)
+// use 'c' front of padding
+
+$cp: 0px;    //coindata padding
+$cpt: 10px;  //coindata padding top
+$cpr: 10px;  //coindata padding right
+$cpb: 10px;  //coindata padding bottom
+$cpl: 10px;  //coindata padding left
+
+
+// ==============================================
+// margins (Creating our own margins)
+// use 'c' front of margin
+
+$cm: 0px;    //coindata margins
+$cmt: 10px;  //coindata margins top
+$cmr: 10px;  //coindata margins right
+$cmb: 10px;  //coindata margins bottom
+$cml: 10px;  //coindata margins left
+
+
+// example to use
+        // h1{
+        //     margin-left: $cpt;
+        //     margin: $cm;
+        // }

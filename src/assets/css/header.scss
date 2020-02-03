@@ -1,0 +1,41 @@
+// encoded by Uttam
+@import 'mixins';
+@import 'variable';
+
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.navbar-section{
+    width: 100%;
+    height: auto;
+    .navbar-color{
+        background-color: #006399;
+        color: white;
+        font-family: Franklin Gothic;
+
+        .header-text{
+            color: white;
+
+            .nav-link{
+                color: #ffffff;
+            }
+            .dropdown-menu{
+                transition: all 300ms linear;
+            }
+        }
+    }    
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
