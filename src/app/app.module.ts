@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
+import { HelloComponent } from './components/hello/hello.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogComponent,
-    HomeComponent
+    HomeComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
